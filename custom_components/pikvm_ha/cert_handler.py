@@ -207,7 +207,7 @@ async def is_pikvm_device(
             meta = result.get("meta", {})
             server = meta.get("server", {})
 
-            serial = platform.get(CONF_SERIAL, None).lower()
+            serial = platform.get(CONF_SERIAL, None)
             model = platform.get(CONF_MODEL, None)
             name = server.get(CONF_HOST, None)
 
